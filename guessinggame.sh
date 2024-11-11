@@ -23,3 +23,5 @@ guess_files() {
 
 # Call the function to start the game
 guess_files
+
+exit 0
