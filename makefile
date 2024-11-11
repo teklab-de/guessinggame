@@ -1,6 +1,9 @@
 # Makefile to generate the README.md file
-DATE_TIME=$(date "+%Y-%m-%d %H:%M:%S")
-LINES=$(wc -l < guessinggame.sh)
+
+DATE_TIME=$(shell date "+%Y-%m-%d %H:%M:%S")
+
+LINES=$(shell wc -l < guessinggame.sh)
+
 README.md: guessinggame.sh
 	@echo "# Guessing Game" > README.md
 	@echo "Date and Time: $(DATE_TIME)" >> README.md
