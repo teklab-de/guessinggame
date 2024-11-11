@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-guess_files() {
+function guess_files() {
     # Get the actual number of files in the current directory
     correct_guess=$(ls -1 | wc -l)
     
